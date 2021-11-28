@@ -1,5 +1,13 @@
 ﻿// Показать числа от -N до N
 
+/*
+коментит все строки
+1
+2
+3
+4
+5
+*/
 
 int N = int.Parse(Console.ReadLine());
 int min = -N;
