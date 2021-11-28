@@ -8,6 +8,7 @@
 4
 5
 */
+Console.Write("input N ");
 
 int N = int.Parse(Console.ReadLine());
 int min = -N;
@@ -18,7 +19,4 @@ while (min<=N)
     
 
 }
-
-
-
 
