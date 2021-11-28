@@ -18,6 +18,3 @@ while (day <= a-2)
     Console.WriteLine(" weekEND!:))))))) ");
   }
 
-
-
-
