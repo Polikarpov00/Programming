@@ -1,7 +1,7 @@
 ﻿// Выяснить, кратно ли число заданному, если нет, вывести остаток.
 
 
-Console.WriteLine("input number ");
+Console.Write("input number ");
 
 int N = int.Parse(Console.ReadLine());
 int n = 5;
@@ -14,7 +14,7 @@ if (ost == 0)
 
 else 
 {
-    Console.WriteLine(ost);
+    Console.WriteLine($"остаток равен = {ost}");
 }
 
 
