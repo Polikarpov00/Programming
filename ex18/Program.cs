@@ -1,5 +1,5 @@
 ﻿// Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
-//Console.WriteLine("введите X и Y ");
+// Console.WriteLine("введите X и Y ");
 // int X,Y;
 
 // X = int.Parse(Console.ReadLine());
@@ -22,29 +22,50 @@
 //     Console.WriteLine("неверные значения");
 // }
 
-bool[] x = {false , true}; 
-bool[] y = {false , true}; 
+// bool[] x = {false , true}; 
+// bool[] y = {false , true}; 
 
-int lenx = x.Length; 
-int leny = y.Length; 
+// int lenx = x.Length; 
+// int leny = y.Length; 
 
-int startx = 0;
-int starty = 0;
+// int startx = 0;
+// int starty = 0;
 
-while (lenx <= 1 & leny <= 1)
-{
+// while (lenx <= 1 & leny <= 1)
+// {
    
-   if ((!(x[startx] |y[starty])) == (!x[startx] & !y[starty]))
+//    if ((!(x[startx] |y[starty])) == (!x[startx] & !y[starty]))
+//     {
+//        Console.WriteLine("true"); 
+       
+//     }
+//     else 
+//     {
+//         Console.WriteLine("false"); 
+//     }
+
+// }
+//     Console.WriteLine("false"); 
+
+
+bool X,Y;
+
+X = 0;
+Y= 0;
+
+if ((X == 0 | X == 1) & (Y == 0 | Y== 1))
+{
+    if ((-(X |Y)) == (-X & -Y)) 
     {
-       Console.WriteLine("true"); 
-       startx ++;
-       starty ++;
+        Console.WriteLine("true");
     }
     else 
     {
-        Console.WriteLine("false"); 
+        Console.WriteLine("false");  
     }
 
 }
-    Console.WriteLine("false"); 
-
+else 
+{
+    Console.WriteLine("неверные значения");
+}
