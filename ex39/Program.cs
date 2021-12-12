@@ -1,2 +1,35 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Найти произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д.
 Console.WriteLine("Hello, World!");
+int[] startAr = { 1, 2, 3, 4, 5, 6};
+int[] resAr = new int[3] ;
+
+void MultArray(int[] array, int[] res)
+{
+
+// res = new int[array.Length / 2];
+
+int first = 0;
+int last = array.Length - 1;
+int index = 0;
+
+while (last > first)
+{
+    
+    res[index] = array[first] * array[last];
+    first++;
+    last--;
+    index++;
+}
+}
+
+void Print(int[] arr)
+{
+    for(int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]}  ");
+    }
+}
+MultArray(startAr, resAr);
+Print(startAr);
+Console.WriteLine();
+Print(resAr);
